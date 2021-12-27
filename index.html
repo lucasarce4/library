@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            Library
+            <button id="addBook">Add book</button>
+        </div>
+        <div class="formContainer">
+            <div id="form"> 
+                <form action="#" id="formSubmit">
+                    <h1>New book</h1>
+                    <div class="inputGroup">
+                        <input type="text" name="title" placeholder="Title" maxlength="50" required />
+                    </div>
+                    <div class="inputGroup">
+                        <input type="text" name="author" placeholder="Author" maxlength="30" required />
+                    </div>
+                    <div class="inputGroup">
+                        <input type="number" name="pages" placeholder="Number of pages" min ="1" max="99999" required />
+                    </div>
+                    <div class="inputGroup">
+                        <input type="number" name="year" placeholder="Year of publication" min="1" max="9999" required />
+                    </div>
+                    <button type="submit" id="add" value ="Add">Add</button>
+                </form>
+            </div>
+        </div>
+        <div class="books"></div>
+                
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
